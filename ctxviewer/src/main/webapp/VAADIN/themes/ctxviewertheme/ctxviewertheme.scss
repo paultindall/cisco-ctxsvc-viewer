@@ -1,0 +1,129 @@
+// Global variable overrides. Must be declared before importing Valo.
+
+// Defines the plaintext font size, weight and family. Font size affects general component sizing.
+//$v-font-size: 16px;
+//$v-font-weight: 300;
+//$v-font-family: "Open Sans", sans-serif;
+
+// Defines the border used by all components.
+//$v-border: 1px solid (v-shade 0.7);
+//$v-border-radius: 4px;
+
+// Affects the color of some component elements, e.g Button, Panel title, etc
+//$v-background-color: hsl(210, 0%, 98%);
+// Affects the color of content areas, e.g  Panel and Window content, TextField input etc
+//$v-app-background-color: $v-background-color;
+
+// Affects the visual appearance of all components
+//$v-gradient: v-linear 8%;
+//$v-bevel-depth: 30%;
+//$v-shadow-opacity: 5%;
+
+// Defines colors for indicating status (focus, success, failure)
+//$v-focus-color: valo-focus-color(); // Calculates a suitable color automatically
+//$v-friendly-color: #2c9720;
+//$v-error-indicator-color: #ed473b;
+
+// For more information, see: https://vaadin.com/book/-/page/themes.valo.html
+// Example variants can be copy/pasted from https://vaadin.com/wiki/-/wiki/Main/Valo+Examples
+
+@import "../valo/valo.scss";
+
+@mixin ctxviewertheme {
+    @include valo;
+
+    .v-formlayout {
+        border-color: #c0c0c0;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 5px;
+        padding: 10px 50px 10px 50px;
+    }
+
+    .v-formlayout-captioncell {
+        width: 10em;
+    }
+
+    .v-formlayout-ctx-rhs-form {
+        background-color: #c0d0e0;
+    }
+
+    .v-formlayout-ctx-lhs-form {
+        /*background-color: #c0d0e0;*/
+        background-color: #e0e0e0;
+    }
+
+    .v-formlayout-contentcell {
+
+    }
+
+    .v-formlayout-row {
+
+    }
+
+    .ctx-lhs-layout {
+
+    }
+
+    .ctx-button-layout {
+
+    }
+
+    .v-captiontext {
+        font-weight: bold;
+    }
+
+    .v-textfield {
+        font-weight: 300;
+        width: 320px;
+    }
+
+    .v-textfield-prompt {
+        font-size: small;
+    }
+
+    .ctx-lhs-form {
+        width: 500px;
+        padding-left: 25px;
+        padding-right: 0px;
+    }
+
+    .ctx-match-checkbox label {
+        font-weight: 300;
+    }
+
+    .ctx-label-x-of-y {
+        font-weight: 300;
+    }
+
+    .ctx-button-search {
+        font-weight: 300;
+        color: blue;
+        width: 99px;
+    }
+
+    .ctx-button-traverse {
+        font-weight: 300;
+        color: blue;
+    }
+
+    .ctx-button-reset {
+        font-weight: 300;
+        color: #f08010;
+        width: 99px;
+    }
+
+    .ctx-button-submit {
+        font-weight: 300;
+        color: #608020;
+        width: 99px;
+    }
+    
+    .ctx-rhs-layout {
+
+    }
+
+    .ctx-hist-table {
+
+    }
+}
