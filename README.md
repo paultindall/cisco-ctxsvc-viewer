@@ -5,7 +5,7 @@ Build as maven web-app
 
 Deploy the war file
 
-Locate connection.data in default directory
+Locate connection.data (containing access key from regsitration process) in default directory
 
 Locate connector.property (containing plugin location) in default directory
 
