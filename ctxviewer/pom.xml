@@ -37,7 +37,7 @@
     <dependencies>
         <dependency>
             <groupId>com.cisco.thunderhead</groupId>
-            <artifactId>context-service</artifactId>
+            <artifactId>context-service-sdk</artifactId>
             <version>${context-service.version}</version>
             <type>jar</type>
         </dependency>
